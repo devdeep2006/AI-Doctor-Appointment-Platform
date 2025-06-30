@@ -1,1 +1,0 @@
-# AI-Doctor-Appointment-Platform
