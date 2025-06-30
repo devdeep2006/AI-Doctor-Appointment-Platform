@@ -19,7 +19,7 @@ export default async function AdminPage() {
 
   return (
     <>
-      <TabsContent value="pending" className="border-none p-0">
+      <TabsContent value="pending" className="border-none p-0 ">
         <PendingDoctors doctors={pendingDoctorsData.doctors || []} />
       </TabsContent>
 

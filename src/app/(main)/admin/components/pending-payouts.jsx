@@ -70,7 +70,7 @@ export function PendingPayouts({ payouts }) {
 
   return (
     <div>
-      <Card className="bg-emerald-50 border border-emerald-200 shadow-sm rounded-xl">
+      <Card className="bg-gradient-to-r from-pink-100 via-purple-100 to-pink-50 border border-pink-200 shadow-md">
         <CardHeader>
           <CardTitle className="text-xl font-bold text-slate-800">
             Pending Payouts
@@ -89,16 +89,16 @@ export function PendingPayouts({ payouts }) {
               {payouts.map((payout) => (
                 <Card
                   key={payout.id}
-                  className="bg-white border border-emerald-100 hover:shadow-md transition-all rounded-lg"
+                  className="bg-white border border-emerald-100 hover:shadow-md transition-all rounded-lg 8 bg-background"
                 >
                   <CardContent className="p-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 ">
                       <div className="flex items-start gap-3">
                         <div className="bg-purple-100 rounded-full p-2 mt-1">
-                          <User className="h-5 w-5 text-purple-500" />
+                          <User className="h-5 w-5 text-pink-700" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-medium text-slate-800">
+                          <h3 className="font-medium text-pink-700">
                             Dr. {payout.doctor.name}
                           </h3>
                           <p className="text-sm text-muted-foreground">

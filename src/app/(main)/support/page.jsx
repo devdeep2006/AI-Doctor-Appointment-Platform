@@ -93,7 +93,7 @@ export default function HelpPage() {
     {
       question: "Can I reschedule an appointment?",
       answer:
-        "Go to the Appointments section in your dashboard, find your upcoming appointment, and click the reschedule option. You can select a new time slot that works for you.",
+        "As of now you can't do that but you can cancel your appointmnet and  select a new time slot that works for you.",
     },
     {
       question: "What if my doctor misses the call?",
@@ -103,7 +103,7 @@ export default function HelpPage() {
     {
       question: "How do I join a video consultation?",
       answer:
-        "You'll receive a consultation link via email and SMS before your appointment. Simply click the link at your scheduled time to join the video call with your doctor.",
+        "You'll receive a consultation joining option 30 mins before the meeting. You will also recieve notificationvia email and SMS before your appointment. ",
     },
     {
       question: "What payment methods do you accept?",
@@ -113,8 +113,38 @@ export default function HelpPage() {
     {
       question: "Can I get my prescription after the consultation?",
       answer:
-        "Yes! After your consultation, your doctor will send a digital prescription directly to your registered email address. You can also download it from your dashboard.",
+        "Yes! After your consultation, your doctor will add the digital prescription into the notes section of your appointment",
     },
+  {
+  question: "What is the AI Symptom Analyzer?",
+  answer:
+    "Our AI Symptom Analyzer is a tool designed to help you understand potential health conditions based on the symptoms you describe. It uses an extensive database of medical knowledge and artificial intelligence to provide preliminary assessments and suggest possible next steps.",
+  },
+  {
+    question: "Is the AI Symptom Analyzer a substitute for a doctor's visit?",
+    answer:
+      "No, the AI Symptom Analyzer is not a diagnostic tool and should not be used as a substitute for professional medical advice, diagnosis, or treatment. It's designed to provide informative insights and guidance, but always consult with a qualified healthcare professional for any health concerns.",
+  },
+  {
+    question: "How accurate is the AI Symptom Analyzer?",
+    answer:
+      "The AI Symptom Analyzer leverages a vast and continuously updated medical database, making its insights highly reliable for preliminary assessment. However, its accuracy depends on the completeness and clarity of the information you provide. It's a tool for guidance, not a definitive diagnosis.",
+  },
+  {
+    question: "What kind of information do I need to provide to the Symptom Analyzer?",
+    answer:
+      "To get the most accurate insights, you should provide a clear and detailed description of your symptoms, including when they started, how severe they are, any accompanying symptoms, and factors that make them better or worse. The more information you provide, the better the analyzer can assist you.",
+  },
+  {
+    question: "Is my personal health information secure with the AI Symptom Analyzer?",
+    answer:
+      "Yes, we prioritize your privacy and data security. All information you provide to the AI Symptom Analyzer is handled with the utmost confidentiality and is encrypted to protect your personal health information in accordance with privacy regulations.",
+  },
+  {
+    question: "Can the AI Symptom Analyzer help me find a doctor?",
+    answer:
+      "While its primary function is symptom analysis, the analyzer can often suggest types of specialists or medical services that might be relevant based on its findings. Some versions may even integrate with our appointment booking system to help you find and schedule consultations with healthcare professionals.",
+  },
   ];
 
   const handleEmailClick = () => {

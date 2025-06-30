@@ -71,11 +71,11 @@ export const testimonials = [
       "The credit model is brilliant. I got a Premium pack and now we all have access to great care without worrying about individual payments.",
   },
   {
-    initials: "AN",
-    name: "Ananya N.",
+    initials: "MS",
+    name: "Meera S.",
     role: "Patient",
     quote:
-      "Booking an appointment was so smooth! I found a specialist, scheduled a time, and got connected—all within minutes.",
+      "The AI Symptom Analyzer is a game-changer! It gave me a clear direction on my mild symptoms, helping me decide if I needed a doctor or just rest. So helpful!",
   },
   {
     initials: "DS",
@@ -85,18 +85,18 @@ export const testimonials = [
       "The platform allows me to maintain a better work-life balance while still providing care to my patients across different cities.",
   },
   {
-    initials: "RK",
-    name: "Rohit K.",
+    initials: "AL",
+    name: "Aisha L.",
     role: "Patient",
     quote:
-      "Having all my prescriptions and doctor notes in one place makes follow-ups easier. It really simplifies my health management.",
+      "I was unsure about my headache, so I tried the AI tool. It was incredibly easy to use and gave me peace of mind with its clear guidance.",
   },
 ];
 
 // JSON data for credit system benefits
 export const creditBenefits = [
-  "Each consultation requires <strong class='text-purple-600'>2 credits</strong>, no matter how long it lasts",
-  "Your credits <strong class='text-purple-600'>never expire</strong> — use them whenever needed",
-  "Monthly plans give you <strong class='text-purple-600'>new credits every month</strong>",
-  "You can cancel or change plans <strong class='text-purple-600'>anytime</strong> without extra charges",
+  "A single consultation requires only <strong class='text-purple-600'>2 credits</strong>, for any length of time",
+  "Your valuable credits <strong class='text-purple-600'>remain active indefinitely</strong> – utilize them on your schedule",
+  "Subscribers on monthly plans receive <strong class='text-purple-600'>fresh credits monthly</strong>",
+  "Manage your plan with complete freedom; <strong class='text-purple-600'>cancel or modify anytime</strong> at no extra cost",
 ];

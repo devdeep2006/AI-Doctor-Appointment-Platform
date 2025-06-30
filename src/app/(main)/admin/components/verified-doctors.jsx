@@ -65,11 +65,11 @@ export function VerifiedDoctors({ doctors }) {
 
   return (
     <div>
-      <Card className="bg-muted/20 border-emerald-900/20">
+      <Card className="bg-gradient-to-r from-pink-100 via-purple-100 to-pink-50 border border-pink-200 shadow-md">
         <CardHeader>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <CardTitle className="text-xl font-bold text-white">
+              <CardTitle className="text-xl font-bold text-pink-700">
                 Manage Doctors
               </CardTitle>
               <CardDescription>
@@ -108,10 +108,10 @@ export function VerifiedDoctors({ doctors }) {
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div className="flex items-center gap-3">
                           <div className="bg-muted/20 rounded-full p-2">
-                            <User className="h-5 w-5 text-emerald-400" />
+                            <User className="h-5 w-5 text-pink-700" />
                           </div>
                           <div>
-                            <h3 className="font-medium text-white">
+                            <h3 className="font-medium text-pink-700">
                               {doctor.name}
                             </h3>
                             <p className="text-sm text-muted-foreground">
@@ -153,7 +153,7 @@ export function VerifiedDoctors({ doctors }) {
                             <>
                               <Badge
                                 variant="outline"
-                                className="bg-emerald-900/20 border-emerald-900/30 text-emerald-400"
+                                className="bg-purple-900 border-emerald-900/30 text-white"
                               >
                                 Active
                               </Badge>

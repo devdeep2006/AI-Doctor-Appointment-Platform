@@ -85,7 +85,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               >
                 <p className="text-slate-700 text-xl md:text-2xl max-w-2xl leading-relaxed font-medium">
-                  Experience healthcare with warmth and compassion. Our platform connects you with caring doctors,
+                  Experience healthcare with warmth and compassion. Our platform connects you with caring doctors,analyse your illness based on the symptoms
                   making your wellness journey comfortable and accessible.
                 </p>
               </motion.div>
@@ -154,6 +154,70 @@ export default function Home() {
           transition={{ duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
         />
       </section>
+<section className="py-12 bg-gradient-to-br from-indigo-50/30 via-purple-50/40 via-pink-50/30 to-white/70">
+  <div className="container mx-auto px-4">
+    <Card className="bg-gradient-to-br from-white/95 via-indigo-50/40 via-purple-50/30 to-pink-50/20 border border-slate-200/40 shadow-lg backdrop-blur-sm overflow-hidden">
+      <CardContent className="p-12 md:p-16 lg:p-20 relative">
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-16"> {/* This class places the image on the right on large screens */}
+          <motion.div
+            className="w-full lg:w-1/2"
+            initial={{ opacity: 0, x: 50 }} /* Animation for image from right */
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <img
+              src="/symptom.png"
+              alt="AI Symptom Analyzer Illustration"
+              className="rounded-3xl shadow-lg w-full h-auto object-cover transition-all duration-700 hover:scale-105 hover:shadow-xl bg-gradient-to-br from-white/90 to-blue-50/50 p-4 border border-slate-100/50"
+            />
+          </motion.div>
+
+          <motion.div
+            className="max-w-2xl w-full lg:w-1/2"
+            initial={{ opacity: 0, x: -50 }} /* Animation for text from left */
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-6xl font-bold text-slate-800 mb-8 leading-tight">
+              Unlock Insights with our{" "}
+              <span className="bg-gradient-to-r from-indigo-600 via-purple-500 via-pink-500 to-rose-400 bg-clip-text text-transparent">
+                AI Symptom Analyzer
+              </span>
+            </h2>
+            <p className="text-xl text-slate-700 mb-10 leading-relaxed font-medium">
+              Curious about your symptoms? Our advanced AI Symptom Analyzer provides instant, data-driven insights to help you understand potential health conditions. Simply describe what you're feeling, and our intelligent system, powered by extensive medical knowledge, will guide you with preliminary assessments and suggest appropriate next steps, empowering you to make informed decisions about your health.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Button
+                asChild
+                size="lg"
+                className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 text-white rounded-full px-12 py-8 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-400 transform hover:scale-105 border-0"
+              >
+                <Link href="/prediction">Try Our Symptom Analyzer</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="bg-gradient-to-r from-white/95 via-indigo-50/70 to-purple-50/60 border-2 border-slate-200/60 text-slate-700 hover:bg-gradient-to-r hover:from-indigo-50/80 hover:via-purple-50/70 hover:to-pink-50/60 hover:border-slate-300/70 rounded-full px-12 py-8 text-lg font-semibold transition-all duration-400 shadow-sm hover:shadow-lg backdrop-blur-sm"
+              >
+                <Link href="/support">Learn More</Link>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Background elements */}
+        <div className="absolute right-0 top-0 w-[300px] h-[300px] bg-gradient-to-br from-indigo-100/15 via-purple-100/10 to-pink-100/8 rounded-full blur-3xl opacity-40 -mr-20 -mt-20" />
+        <div className="absolute left-0 bottom-0 w-[250px] h-[250px] bg-gradient-to-br from-purple-100/10 via-pink-100/8 to-indigo-100/15 rounded-full blur-2xl opacity-30 -ml-16 -mb-16" />
+        <div className="absolute top-1/2 left-1/2 w-[200px] h-[200px] bg-gradient-to-br from-white/20 via-blue-50/10 to-purple-50/8 rounded-full blur-2xl opacity-25 -translate-x-1/2 -translate-y-1/2" />
+      </CardContent>
+    </Card>
+  </div>
+</section>
 
       {/* Features Section */}
       <section className="py-24 bg-gradient-to-br from-white/90 via-green-50/30 via-blue-50/20 to-purple-50/30">
@@ -409,7 +473,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-indigo-50/30 via-purple-50/40 via-pink-50/30 to-white/70">
         <div className="container mx-auto px-4">
