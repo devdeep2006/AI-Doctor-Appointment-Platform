@@ -84,7 +84,7 @@ export default function VideoCall({ sessionId, token }) {
         publisherRef.current = window.OT.initPublisher(
           "publisher", // This targets the div with id="publisher"
           {
-            insertMode: "replace", // Change from "append" to "replace"
+            insertMode: "append", // Change from "append" to "replace"
             width: "100%",
             height: "100%",
             publishAudio: isAudioEnabled,
