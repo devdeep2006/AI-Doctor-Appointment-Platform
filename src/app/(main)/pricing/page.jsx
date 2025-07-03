@@ -44,13 +44,13 @@ export default async function PricingPage() {
 
       {/* FAQ Section */}
       <div className="max-w-3xl mx-auto mt-20 text-center">
-        <h2 className="text-2xl font-bold text-white mb-2">
+        <h2 className="text-2xl font-bold text-purple-600 mb-2">
           Questions? We're Here to Help
         </h2>
         <p className="text-muted-foreground mb-2">
           Reach out at{" "}
           <a
-            href="mailto:support@medimeet.com"
+            href="mailto:support@novacare.com"
             className="underline hover:text-purple-400 transition"
           >
             support@medimeet.com
