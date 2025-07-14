@@ -28,7 +28,7 @@
 | Tech            | Role                                           |
 |-----------------|------------------------------------------------|
 | **Next.js**     | Full-stack framework (SSR, routing, APIs)      |
-| **Supabase**    | Realtime Postgres DB & auth backend            |
+| **NeonDB**      | Scalable serverless Postgres database            |
 | **Prisma**      | ORM for database modeling                      |
 | **Clerk**       | Authentication, roles, session management      |
 | **Gemini API**  | AI-powered symptom analysis                    |
